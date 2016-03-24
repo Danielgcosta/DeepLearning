@@ -1,0 +1,8 @@
+g++ -O3 -fPIC -c -Wall -fopenmp -I/local/aurelio/v3o2/lib/plugin libs/pugixml-1.6/pugixml.cpp -o obj/libs/pugixml-1.6/pugixml.o 
+g++ -O3 -fPIC -c -Wall -fopenmp -I/local/aurelio/v3o2/lib/plugin MSA/MSA_DLCommand.cpp -o obj/MSA/MSA_DLCommand.o 
+In file included from MSA/MSA_DLCommand.cpp:8:0:
+MSA/MSA_DLCommand.h:12:21: fatal error: SDKMenu.h: No such file or directory
+ #include "SDKMenu.h"
+                     ^
+compilation terminated.
+gmake: *** [obj/MSA/MSA_DLCommand.o] Error 1

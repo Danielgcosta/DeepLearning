@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="core">
+        <df name="dnn">
+          <in>Layer.h</in>
+          <in>MLPNetwork.h</in>
+          <in>PerceptronLayer.h</in>
+        </df>
+        <in>AutoEncoder.h</in>
+        <in>AutoEncoderGPU.h</in>
+        <in>CUDAErrorMessage.h</in>
+        <in>CUDAMatrix.h</in>
+        <in>CUDANeuralNetwork.h</in>
+        <in>CUDAVector.h</in>
+        <in>DataTypes.h</in>
+        <in>NeuralNetwork.cpp</in>
+        <in>NeuralNetwork.h</in>
+        <in>RBM.h</in>
+        <in>RBMStack.h</in>
+      </df>
+      <df name="lib">
+        <df name="release">
+          <df name="Linux26g4_64">
+          </df>
+        </df>
+      </df>
+      <df name="libs">
+        <df name="pugixml-1.6">
+          <in>pugiconfig.hpp</in>
+          <in>pugixml.cpp</in>
+          <in>pugixml.hpp</in>
+        </df>
+      </df>
+      <df name="math">
+        <in>Math.h</in>
+        <in>Matrix3x3.h</in>
+        <in>Matrix4x4.h</in>
+        <in>QuaternionRotation.h</in>
+        <in>Vector.h</in>
+        <in>Vector2D.h</in>
+        <in>Vector3D.h</in>
+        <in>Vector4D.h</in>
+      </df>
+      <df name="MSA">
+        <df name="data">
+          <in>BKPNeuralNet.cpp</in>
+          <in>BKPNeuralNet.h</in>
+          <in>DVPVolumeData.cpp</in>
+          <in>DVPVolumeData.h</in>
+          <in>DataGrid3.h</in>
+          <in>DeepLearningNetwork.h</in>
+          <in>GridCoordConverter.cpp</in>
+          <in>GridCoordConverter.h</in>
+          <in>Matrix.h</in>
+          <in>RBM.h</in>
+          <in>RBM_Stack.h</in>
+          <in>SPCA.cpp</in>
+          <in>SPCA.h</in>
+          <in>SoDataSet.h</in>
+          <in>Volume_Smp.cpp</in>
+          <in>Volume_Smp.h</in>
+          <in>dipVolume.h</in>
+          <in>featureUtils.h</in>
+          <in>stl_utils.h</in>
+          <in>utl.cpp</in>
+          <in>utl.h</in>
+        </df>
+        <df name="processing">
+          <in>Cluster.h</in>
+          <in>GNG_CPP.cpp</in>
+          <in>GNG_CPP.h</in>
+          <in>Graph_Algorithms.h</in>
+          <in>SeismicProcessingController.h</in>
+          <in>lusystem.cpp</in>
+          <in>lusystem.h</in>
+        </df>
+        <in>FaultAtt.cpp</in>
+        <in>FaultAtt.h</in>
+        <in>MSA_DLCommand.cpp</in>
+        <in>MSA_DLCommand.h</in>
+      </df>
+      <df name="obj">
+        <df name="libs">
+          <df name="pugixml-1.6">
+          </df>
+        </df>
+        <df name="MSA">
+          <df name="data">
+          </df>
+          <df name="processing">
+          </df>
+        </df>
+      </df>
+      <in>MSA_DL.cpp</in>
+      <in>MSA_DL.h</in>
+      <in>main.cpp</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_signals>
+        </gdb_signals>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
